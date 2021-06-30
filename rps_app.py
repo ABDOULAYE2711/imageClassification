@@ -31,9 +31,9 @@ st.write("""
          """
          )
 
-st.write("This is a simple image classification web app to predict rock-paper-scissor hand sign")
+st.write("This is a simple image classification web app to predict rock-paper-scissor hand sign : By BADJI")
 
-file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
+file = st.file_uploader("Please upload an image file", type=["jpg", "png","JPEG"])
 #
 if file is None:
     st.text("You haven't uploaded an image file")
