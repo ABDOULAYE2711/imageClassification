@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on 10 - 06 - 2021
-
-@author: Badji
-"""
-
 import cv2
 import numpy as np
 import streamlit as st
