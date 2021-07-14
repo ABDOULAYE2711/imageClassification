@@ -8,7 +8,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_in
 st.title("Image Classification : Paper - Rock - Scissors / BADJI ")
 model = tf.keras.models.load_model("my_model.hdf5")
 ### load file
-uploaded_file = st.file_uploader("Choose a image file", type=["jpg","png","JPEG"])
+uploaded_file = st.file_uploader("Choose a image file (Paper or Rock or Scissors", type=["jpg","png","JPEG"])
 
 map_dict = {0: 'paper',
             1: 'rock',
