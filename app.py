@@ -6,12 +6,17 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
 from PIL import Image
-image_badji = Image.open('image.jpg')
+image_game = Image.open('image.jpg')
 
-st.title("Image Classification : Paper - Rock - Scissors / BADJI ")
+st.sidebar.info('This app is created using tensorflow and Streamlit')
+st.sidebar.info('Abdoulaye Badji')
+st.sidebar.success('https://www.youtube.com/channel/UCZ_Sor5J6415zV8k3hNlk6Q')
+st.sidebar.image(image_game)
+
+st.title("Image Classification : Paper - Rock - Scissors  ")
 model = tf.keras.models.load_model("my_model.hdf5")
 ### load file
-uploaded_file = st.file_uploader("Choose a image file (Paper or Rock or Scissors", type=["jpg","png","JPEG"])
+uploaded_file = st.file_uploader("Choose a image file (Paper or Rock or Scissors)", type=["jpg","png","JPEG"])
 
 map_dict = {0: 'paper',
             1: 'rock',
