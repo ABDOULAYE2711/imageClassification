@@ -5,6 +5,9 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
+from PIL import Image
+image_badji = Image.open('image.jpg')
+
 st.title("Image Classification : Paper - Rock - Scissors / BADJI ")
 model = tf.keras.models.load_model("my_model.hdf5")
 ### load file
